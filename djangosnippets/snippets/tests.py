@@ -60,7 +60,7 @@ class SnippetDetailTest(TestCase):
         self.assertTemplateUsed(response, "snippets/snippets_detail.html")
 
     def test_top_page_returns_200_and_expected_heading(self):
-        response = self.client.get(f"/snippets/{self.snippets.id}/")
+        response = self.client.get(f"/snippets/{self.snippet.id}/")
         self.assertContains(response, self.snippet.title, status_code=200)
 
 # --------- END -----------
