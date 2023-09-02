@@ -1,8 +1,8 @@
 from django import forms
-from django.models import Sunippet
+from django.models import Snippet
 
 
 class SnippetForm(forms.ModelForm):
     class Meta:
-        model = Sunippet
+        model = Snippet
         fields = ('title', 'code', 'descrption')
