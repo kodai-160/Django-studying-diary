@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def top(request):
-    return render(request, "snippets.html")
+    return render(request, "snippets/top.html")
 
 
 def snippet_new(request):
