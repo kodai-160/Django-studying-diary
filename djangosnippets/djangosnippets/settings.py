@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # installed apps
     'django_bootstrap5',
+    'pygments_render',
 ]
 
 MIDDLEWARE = [
