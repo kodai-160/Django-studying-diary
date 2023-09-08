@@ -1,0 +1,13 @@
+{% extends 'comment.html' %}
+{% load django_bootstrap5 %}
+
+{% block comment_new %}
+
+<h2>コメントを投稿する</h2>
+<form action="" method='post'>
+  {% csrf_token %}
+  {% bootstrap_form form %}
+  {% bootstrap_button button_type="submit" content="コメント" %}
+</form>
+
+{% endblock comment_new %}

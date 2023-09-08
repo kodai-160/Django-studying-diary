@@ -1,0 +1,15 @@
+{% extends 'snippet_detail.html' %}
+{% load django_bootstrap5 %}
+
+{% block comments %}
+<h2>コメント一覧</h2>
+{% for comment in comments %}
+<p>{{ comment.text }}</p>
+<p><small>by {{ comment.commented_by }}さん {{ comment.commented_at }}</small></p>
+{% endfor %}
+
+{% block comment_new %}
+{% comment %} 投稿用の入力フォーム {% endcomment %}
+{% endblock comment_new %}
+
+{% endblock comments %}
